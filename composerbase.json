@@ -1,0 +1,15 @@
+{
+    "name": "issuesphp/issuesphp",
+    "autoload": {
+        "psr-4": {
+            "Jonathan\\Issuesphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jonathan castro",
+            "email": "joncastdev@gmail.com"
+        }
+    ],
+    "require": {}
+}
