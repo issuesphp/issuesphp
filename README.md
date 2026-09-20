@@ -2,6 +2,28 @@
 
 a simple PHP framework that helps solve problems
 
+## Installation
+
+```bash
+$ composer install
+```
+
+```bash
+$ php issues.php
+```
+
+```bash
+$ 1 issuesphp:serve | Start a local server
+```
+
+```bash
+$ 2 issuesphp:make:migration | Creates a new migration
+```
+
+```bash
+$ http://localhost:8080
+```
+
 ## About
 
 - Follow the creator Jonathan Castro:
@@ -16,15 +38,6 @@ a simple PHP framework that helps solve problems
 
 * **Jonathan Castro** - *Software Engineer* - [joncastdev](https://github.com/joncastdev)
 
-## Installation
-
-```bash
-$ composer install
-```
-
-```bash
-$ php issues.php
-```
 
 ## Support
 
