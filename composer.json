@@ -12,6 +12,8 @@
 			"email": "joncastdev@gmail.com"
 		}
 	],
-	"require": {}
+	"require": {
+		  "issuesphp/framework": "^1.0"
+	}
 }
 
