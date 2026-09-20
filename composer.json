@@ -13,7 +13,7 @@
 		}
 	],
 	"require": {
-		  "issuesphp/framework": "^1.0"
+		  "issuesphp/framework": "^v1.0.x-dev"
 	}
 }
 

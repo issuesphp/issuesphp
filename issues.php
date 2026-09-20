@@ -8,7 +8,11 @@
 
 // $result = shell_exec('./test');
 
-$result = shell_exec('gcc o.c -o o && ./o');
+// $result = shell_exec('gcc o.c -o o && ./o');
+
+$result = shell_exec('gcc vendor/issuesphp/framework/o.c -o o && ./o');
+
+
 
 // $result1 = shell_exec('gcc o.c -o o');
 
