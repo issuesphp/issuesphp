@@ -1,6 +1,7 @@
 {
 	"name": "issuesphp/issuesphp",
-	"description": "a simple PHP framework that helps solve problems.",
+	"type": "project",
+	"description": "The skeleton application for the IssuesPHP framework.",
 	"license": "MIT",
 	"keywords": [
 		"framework",
@@ -13,7 +14,7 @@
 		}
 	],
 	"require": {
-		  "issuesphp/framework": "^v1.0.x-dev"
+		"issuesphp/framework": "^v1.0.x-dev"
 	}
 }
 

@@ -1,8 +1,19 @@
 ## Introduction
 
-a simple PHP framework that helps solve problems
+The skeleton application for the IssuesPHP framework.
 
 ## Installation
+
+- Composer
+
+```bash
+$ composer create-project issuesphp/issuesphp
+```
+-  Clone Project
+
+```bash
+$ git clone https://github.com/issuesphp/issuesphp.git
+``` 
 
 ```bash
 $ composer install
