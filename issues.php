@@ -1,4 +1,8 @@
 <?php
+
+echo "Type a command to begin:\n";
+echo "1 issuesphp:serve | Start a local server\n";
+echo "2 issuesphp:make:migration | Creates a new migration\n";
 // Ejecuta el comando 'ls -l' para listar archivos
 // $resultado = shell_exec('ls -l');
 
@@ -10,7 +14,11 @@
 
 // $result = shell_exec('gcc o.c -o o && ./o');
 
-$result = shell_exec('gcc vendor/issuesphp/framework/o.c -o o && ./o');
+$result = shell_exec('g++ o.c -o o && ./o');
+
+
+
+// $result = shell_exec('gcc vendor/issuesphp/framework/o.c -o o && ./o');
 
 
 
