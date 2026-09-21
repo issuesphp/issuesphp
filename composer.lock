@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3129f9526dfcf7edddcc2d4bc899e55",
+    "content-hash": "f9d19b1d7cd16c235655f60bc5a85fc7",
     "packages": [
         {
             "name": "issuesphp/framework",
-            "version": "v1.0.x-dev",
+            "version": "v0.1.0-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/issuesphp/framework.git",
-                "reference": "89b073098f1f4f26f092976f4c3e4c548cf36c82"
+                "reference": "cad851dc791d7d6b20adf69ef90200d1e9c26021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/issuesphp/framework/zipball/89b073098f1f4f26f092976f4c3e4c548cf36c82",
-                "reference": "89b073098f1f4f26f092976f4c3e4c548cf36c82",
+                "url": "https://api.github.com/repos/issuesphp/framework/zipball/cad851dc791d7d6b20adf69ef90200d1e9c26021",
+                "reference": "cad851dc791d7d6b20adf69ef90200d1e9c26021",
                 "shasum": ""
             },
             "type": "library",
@@ -31,14 +31,14 @@
                     "email": "joncastdev@gmail.com"
                 }
             ],
-            "description": "core a simple PHP framework that helps solve problems.",
+            "description": "A simple PHP framework that helps solve problems in software development.",
             "keywords": [
                 "framework",
                 "issuesphp"
             ],
             "support": {
                 "issues": "https://github.com/issuesphp/framework/issues",
-                "source": "https://github.com/issuesphp/framework/tree/v1.0"
+                "source": "https://github.com/issuesphp/framework/tree/v0.1.0-alpha"
             },
             "funding": [
                 {
@@ -50,14 +50,14 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-09-20T01:48:31+00:00"
+            "time": "2026-09-21T12:09:26+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "issuesphp/framework": 20
+        "issuesphp/framework": 15
     },
     "prefer-stable": false,
     "prefer-lowest": false,
