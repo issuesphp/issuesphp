@@ -14,7 +14,7 @@
 		}
 	],
 	"require": {
-		"issuesphp/framework": "^v1.0.x-dev"
+		"issuesphp/framework": "v0.1.0-alpha"
 	}
 }
 
