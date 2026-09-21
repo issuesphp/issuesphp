@@ -24,11 +24,11 @@ $ php issues.php
 ```
 
 ```bash
-$ 1 issuesphp:serve | Start a local server
+$ issuesphp:serve | Start a local server
 ```
 
 ```bash
-$ 2 issuesphp:make:migration | Creates a new migration
+$ issuesphp:make:migration | Creates a new migration
 ```
 
 ```bash
