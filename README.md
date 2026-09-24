@@ -35,6 +35,18 @@ $ issuesphp:make:migration | Creates a new migration
 $ http://localhost:8080
 ```
 
+-  Option 2
+
+```bash
+$ http://localhost/issuesphpdev/
+```
+
+-  Active mod_rewrite apache
+
+```bash
+$ sudo a2enmod rewrite
+```
+
 ## About
 
 - Follow the creator Jonathan Castro:
