@@ -14,7 +14,7 @@
 		}
 	],
 	"require": {
-		"issuesphp/framework": "v0.1.0-alpha"
+		"issuesphp/framework": "v1.0.0"
 	},
 	"minimum-stability": "stable",
 	"prefer-stable": true
