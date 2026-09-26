@@ -28,7 +28,28 @@ $ issuesphp:serve | Start a local server
 ```
 
 ```bash
-$ issuesphp:make:migration | Creates a new migration
+$ issuesphp:drop:one:migration| Drop One migration
+```
+-  Parameters example Options
+
+```bash
+$  localhost
+```
+
+```bash
+$  username
+```
+
+```bash
+$  password
+```
+
+```bash
+$  database
+```
+
+```bash
+$  tableName
 ```
 
 ```bash
