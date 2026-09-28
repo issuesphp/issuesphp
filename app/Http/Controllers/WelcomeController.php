@@ -15,7 +15,7 @@ class WelcomeController extends MainController
   public function index() 
   { 
 
-    $this->view('welcome');
+    $this->view('welcome/index');
     
   }   
 
