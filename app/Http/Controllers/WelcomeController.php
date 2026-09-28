@@ -3,18 +3,23 @@
 namespace App\Http\Controllers;
 
 
-class WelcomeController
+use Issues\Controller\Request\MainController;
+
+
+include 'vendor/issuesphp/framework/src/Issues/Controller/Request/MainController.php';
+
+
+class WelcomeController extends MainController
 {
 
-  public function index()
+  public function index() 
   { 
-  
 
-    echo "Welcome to IssuesPHP Framework";
-
+    $this->view('welcome');
     
   }   
 
 }
+
 
 
