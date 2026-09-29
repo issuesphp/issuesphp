@@ -1,25 +1,8 @@
-<?php
-
-include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
-
-include PATH_APP;
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-
-	<meta property="og:image" content="public/assets/img/issuesphp.png" /> 
-
-	<meta name="author" content="Jonathan Castro">
-	<meta name="copyright" content="IssuesPHP Framework" /> 
-
-	<title>IssuesPHP Framework</title>
-
-	<link rel="icon" type="image/x-icon" href="public/assets/img/issuesphp.png" />
+	<title>404 Page Not Found</title>
 
 	<style>
 		div.logo {
@@ -90,19 +73,14 @@ include PATH_APP;
 
 		<div class="wrap">
 
-			<h1>Welcome to IssuesPHP Framework</h1>
-			<p>Version: <?php echo ISSUESPHP_VERSION;?></p>
-			<br>
+			<h1>404 - File Not Found</h1>
 
-			<p>Getting started <a href="https://github.com/issuesphp/issuesphp" class="btn btn-light" target="_blank">Skeleton</a>
-				and <a href="https://github.com/issuesphp/framework" class="btn btn-light" target="_blank">Framework</a></p>
-				<br>
-				<p>Sponsor our project <a href="https://ko-fi.com/foroworkers" class="btn btn-light" target="_blank">Donate</a></p>
+			<a href="/" class="btn btn-light">Back</a>
 
-			</div>
+		</div>
 
 
-		</body>
+	</body>
 
 
-		</html>
+	</html>
