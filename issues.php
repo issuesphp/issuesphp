@@ -1,15 +1,15 @@
 <?php
 
-echo "Type a command to begin:\n";
-echo "issuesphp:serve | Start a local server\n";
-echo "issuesphp:make:migration | Creates a new migration\n";
+echo "Connect Database an press y / n:\n";
+echo "\n";
+echo "Type a command to begin for option y:\n";
 echo "issuesphp:make:push:migration | Creates a new migration and migrate\n";
 echo "issuesphp:drop:one:migration | Drop One migration\n";
 
+echo "\n";
+echo "Type a command to begin for option n:\n";
+echo "issuesphp:serve | Start a local server\n";
 
-// $result = shell_exec('g++ o.c -o o && ./o');
-
-// $result = shell_exec('g++ vendor/issuesphp/framework/o.c -o o && ./o');
 
 $result = shell_exec('g++ vendor/issuesphp/framework/o.c -o o $(mysql_config --cflags --libs) && ./o');
 

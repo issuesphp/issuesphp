@@ -7,7 +7,7 @@ The skeleton application for the IssuesPHP framework.
 - Composer
 
 ```bash
-$ composer create-project issuesphp/issuesphp
+$ composer create-project issuesphp/issuesphp nameapp
 ```
 -  Clone Project
 
