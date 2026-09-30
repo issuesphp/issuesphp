@@ -7,6 +7,7 @@ echo "\n";
 echo "Type a command to begin for option y:\n";
 echo "issuesphp:make:push:migration | Creates a new migration and migrate\n";
 echo "issuesphp:drop:one:migration | Drop One migration\n";
+echo "issuesphp:db:seed:one | Insert One values\n";
 
 echo "\n";
 echo "Type a command to begin for option n:\n";
