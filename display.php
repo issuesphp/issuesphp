@@ -6,4 +6,4 @@ $routeNameController  = $_GET['controller'] ?? '';
 $routeNameMethod  = $_GET['method'] ?? '';
 
 
-routeResp($routeNameController , $routeNameMethod);
+routeResp('welcome', 'index', 'welcome',$routeNameController);
