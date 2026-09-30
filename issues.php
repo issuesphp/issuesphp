@@ -1,5 +1,7 @@
 <?php
 
+include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
+
 echo "Connect Database an press y / n:\n";
 echo "\n";
 echo "Type a command to begin for option y:\n";
@@ -11,7 +13,7 @@ echo "Type a command to begin for option n:\n";
 echo "issuesphp:serve | Start a local server\n";
 
 
-$result = shell_exec('g++ vendor/issuesphp/framework/o.c -o o $(mysql_config --cflags --libs) && ./o');
+$result = shell_exec(PATH_COMMANDS);
 
 echo $result;
 ?>
