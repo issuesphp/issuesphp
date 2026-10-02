@@ -2,6 +2,11 @@
 
 The skeleton application for the IssuesPHP framework.
 
+## Documentation
+
+The IssuesPHP Framework manual is available at [blog/docs](https://issuesphp.blogspot.com/p/issuesphp.html).
+
+
 ## Installation
 
 - Composer
