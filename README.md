@@ -33,31 +33,6 @@ $ issuesphp:serve | Start a local server
 ```
 
 ```bash
-$ issuesphp:drop:one:migration| Drop One migration
-```
--  Parameters example Options
-
-```bash
-$  localhost
-```
-
-```bash
-$  username
-```
-
-```bash
-$  password
-```
-
-```bash
-$  database
-```
-
-```bash
-$  tableName
-```
-
-```bash
 $ http://localhost:8080
 ```
 
