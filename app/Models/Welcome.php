@@ -17,7 +17,7 @@ class User extends MainModel
 	public function getWelcomes()
 	{ 		
 
-		$query = MainModel::getAll($this->table);
+		$query = MainModel::get($this->table);
 		return $query;	
 
 	}				
