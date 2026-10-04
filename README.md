@@ -51,11 +51,11 @@ $ sudo a2enmod rewrite
 ## About
 
 - Follow the creator Jonathan Castro:
-    - YouTube: **[youtube.com/@joncastdev](https://youtube.com/@joncastdev)** — Videos every week
+    - YouTube: **[youtube.com/@issuesphp](https://youtube.com/@issuesphp)** — Videos every week
     - Twitch: **[twitch.tv/joncastdev](https://twitch.tv/joncastdev)** — Live coding on Mondays, Wednesdays, and Fridays at 9PM UTC
     - LinkedIn: **[linkedin.com/in/joncastdev](https://www.linkedin.com/in/joncastdev)**
     - Instagram: **[instagram.com/joncastdev](https://www.instagram.com/joncastdev)**
-    - Tiktok: **[tiktok.com/@joncastdev](https://www.tiktok.com/@joncastdev)**
+    - Tiktok: **[tiktok.com/@issuesphp](https://www.tiktok.com/@issuesphp)**
 
 
 ## Author ✒️
