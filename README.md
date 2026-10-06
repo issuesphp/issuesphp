@@ -48,14 +48,22 @@ $ http://localhost/issuesphpdev/
 $ sudo a2enmod rewrite
 ```
 
-## About
+## Resources
 
-- Follow the creator Jonathan Castro:
-    - YouTube: **[youtube.com/@issuesphp](https://youtube.com/@issuesphp)** — Videos every week
-    - Twitch: **[twitch.tv/joncastdev](https://twitch.tv/joncastdev)** — Live coding on Mondays, Wednesdays, and Fridays at 9PM UTC
-    - LinkedIn: **[linkedin.com/in/joncastdev](https://www.linkedin.com/in/joncastdev)**
-    - Instagram: **[instagram.com/joncastdev](https://www.instagram.com/joncastdev)**
-    - Tiktok: **[tiktok.com/@issuesphp](https://www.tiktok.com/@issuesphp)**
+- Find us at:
+- YouTube: **[youtube.com/@issuesphp](https://youtube.com/@issuesphp)** — Videos every week
+- Stackoverflow: **[stackoverflow.com/users/33186023/issuesphp](https://stackoverflow.com/users/33186023/issuesphp)** — QA
+- Medium: **[medium.com/@issuesphp](https://medium.com/@issuesphp)** — Tutorials
+- Dev: **[dev.to/issuesphp](https://dev.to/issuesphp)** — Tutorials
+- Reddit: **[reddit.com/user/IssuesPHP/](https://www.reddit.com/user/IssuesPHP/)** — Tutorials
+
+
+## We appreciate
+
+- We thank all the collaborators who have contributed to this project in any way:
+- Stackoverflow: **[es.stackoverflow.com/users/16228/sal](https://es.stackoverflow.com/users/16228/sal)(https://es.stackoverflow.com/questions/636365/shell-exec-no-se-ejecuta-con-parametros-get)** 
+
+
 
 
 ## Author ✒️
