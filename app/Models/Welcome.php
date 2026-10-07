@@ -3,13 +3,13 @@
 namespace App\Models;
 
 
-use Issues\Model\MainModel;
+use Issues\Model\IpModel;
 
 
-include 'vendor/issuesphp/framework/src/Issues/Model/MainModel.php';
+include 'vendor/issuesphp/framework/src/Issues/Model/IpModel.php';
 
 
-class User extends MainModel
+class User extends IpModel
 {	
 
 	public $table = 'welcomes';
@@ -17,7 +17,7 @@ class User extends MainModel
 	public function getWelcomes()
 	{ 		
 
-		$query = MainModel::get($this->table);
+		$query = IpModel::chosenAll($this->table);
 		return $query;	
 
 	}				

@@ -17,7 +17,7 @@
 		}
 		body {
 			height: 100%;
-			background: #fafafa;
+			background: black;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			color: #777;
 			font-weight: 300;
