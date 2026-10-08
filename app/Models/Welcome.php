@@ -5,8 +5,9 @@ namespace App\Models;
 
 use Issues\Model\IpModel;
 
+include PATH_MAIN;
 
-include 'vendor/issuesphp/framework/src/Issues/Model/IpModel.php';
+include PATH_MODEL;
 
 
 class User extends IpModel

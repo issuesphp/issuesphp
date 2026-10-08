@@ -1,11 +1,15 @@
 <?php
 
-include 'vendor/issuesphp/framework/src/Issues/Display/Routes/Start.php';
+use Issues\Display\Routes\Route;
+
+include PATH_MAIN;
+
+include PATH_ROUTE;
 
 
 if (empty($_GET['controller'])&&empty($_GET['method'])) {	
 
-	routeInit();
+	Route::init();
 }
 
 
