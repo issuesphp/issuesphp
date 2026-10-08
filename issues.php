@@ -1,6 +1,6 @@
 <?php
 
-include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
+include PATH_MAIN;
 
 echo "Connect Database an press y / n:\n";
 echo "\n";

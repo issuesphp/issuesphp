@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 
 use Issues\Controller\Request\IpController;
 
+include PATH_MAIN;
 
-include 'vendor/issuesphp/framework/src/Issues/Controller/Request/IpController.php';
+include PATH_CONTROLLER;
 
 
 class WelcomeController extends IpController
