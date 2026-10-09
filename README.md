@@ -6,6 +6,18 @@ The skeleton application for the IssuesPHP framework.
 
 The IssuesPHP Framework manual is available at [blog/docs](https://issuesphp.blogspot.com/p/issuesphp.html).
 
+## Setup
+
+- PHP 
+- PostgreSQL, Mysqli (Or MySQL)
+- [Composer](https://getcomposer.org/)
+
+## Additional details on dependencies
+
+Assuming you're running Ubuntu, and then install all dependencies from the following list:
+
+sudo apt install php-mysqli php-pgsql 
+
 
 ## Installation
 
