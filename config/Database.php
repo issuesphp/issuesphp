@@ -7,6 +7,7 @@ define('DB_USERNAME', '');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', '');
 define('DB_DRIVER', 'mysql');
+define('DB_NUMBER', '');
 
 
 
