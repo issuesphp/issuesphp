@@ -71,6 +71,8 @@ $ sudo a2enmod rewrite
 
 - Stackoverflow: **[es.stackoverflow.com/users/16228/sal](https://es.stackoverflow.com/users/16228/sal) (https://es.stackoverflow.com/questions/636365/shell-exec-no-se-ejecuta-con-parametros-get)** 
 
+- Stackoverflow: **[es.stackoverflow.com/users/315134/francisco-ia-lover](https://es.stackoverflow.com/users/315134/francisco-ia-lover) (https://es.stackoverflow.com/questions/636368/combinar-include-dir-para-enlazar-archivos)** 
+
 
 
 
