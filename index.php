@@ -1,8 +1,5 @@
 <?php
 
-header('Location: https://issuesphp.blogspot.com/p/issuesphp.html');
-exit;
-
 use Issues\Display\Routes\Route;
 
 include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
