@@ -18,7 +18,7 @@ class WelcomeController extends IpController
   public function index() 
   { 
 
-    $this->view('welcome/index');
+    return $this->view('welcome/index');
     
   }   
 

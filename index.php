@@ -1,7 +1,9 @@
 <?php
 
 // Register the Composer autoloader...
-require __DIR__.'/../vendor/autoload.php';
+// require __DIR__.'/../vendor/autoload.php';
+
+require __DIR__.'/vendor/autoload.php';
 
 use Issues\Display\Routes\Route;
 
