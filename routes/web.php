@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__.'/vendor/autoload.php';
+
 use Issues\Display\Routes\Route;
 
 // include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
