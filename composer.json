@@ -15,13 +15,7 @@
 	],
 	"require": {
 		"issuesphp/framework": "^v1.0"
-	},
-	"autoload": {
-		"psr-4": {			
-			"Issues\\Controller\\Request\\": "Controller/Request/",
-			"Issues\\Model\\": "Model/"
-		}
-	},
+	},	
 	"minimum-stability": "stable",
 	"prefer-stable": true
 }
