@@ -1,10 +1,6 @@
 <?php
 
-include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
 
-// include PATH_MAIN;
-
-include PATH_APP;
 
 
 ?>
@@ -93,7 +89,7 @@ include PATH_APP;
 		<div class="wrap">
 
 			<h1>Welcome to IssuesPHP Framework</h1>
-			<p>Version: <?php echo ISSUESPHP_VERSION;?></p>
+			<p>Version:</p>
 			<br>
 
 			<p>Getting started <a href="https://github.com/issuesphp/issuesphp" class="btn btn-light" target="_blank">Skeleton</a>

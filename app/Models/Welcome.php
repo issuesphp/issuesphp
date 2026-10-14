@@ -5,10 +5,6 @@ namespace App\Models;
 
 use Issues\Model\IpModel;
 
-// include PATH_MAIN;
-
-// include PATH_MODEL;
-
 
 class User extends IpModel
 {	
