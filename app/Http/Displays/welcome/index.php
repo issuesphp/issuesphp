@@ -2,11 +2,9 @@
 
 namespace App\Http\Displays;
 
+require __DIR__.'/../../../../bootstrap/app.php';
+
 use App\Http\Controllers\WelcomeController;
-
-
-include __DIR__ . '../../../Controllers/WelcomeController.php';
-
 
 
 $welcome = new WelcomeController();
