@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 
 use Issues\Controller\Request\IpController;
 
+use App\Models\Welcome;
+
 
 class WelcomeController extends IpController
 {
