@@ -6,7 +6,7 @@ namespace App\Models;
 use Issues\Model\IpModel;
 
 
-class User extends IpModel
+class Welcome extends IpModel
 {	
 
 	public $table = 'welcomes';
