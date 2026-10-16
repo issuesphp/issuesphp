@@ -2,20 +2,25 @@
 
 namespace App\Http\Controllers;
 
-
-use Issues\Controller\Request\IpController;
-
 use App\Models\Welcome;
 
 
-class WelcomeController extends IpController
+class WelcomeController extends MainController
 {
 
   public function index() 
-  { 
+  {    
 
-    return $this->view('welcome/index');
-    
+    $message = 'Welcome to IssuesPHP Framework';
+
+    $data = array(
+      "message" => $message      
+    );
+
+    $jstring = json_encode($data);
+
+    return $this->view('welcome/index',$jstring);
+
   }   
 
 }
