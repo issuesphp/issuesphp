@@ -1,8 +1,12 @@
 <?php
 
+if (isset($argv[1])) {
+    parse_str($argv[1], $_GET);
+}
 
+$params = $_GET['params'] ?? '';
 
-
+$jobject = json_decode($params, true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -88,7 +92,7 @@
 
 		<div class="wrap">
 
-			<h1>Welcome to IssuesPHP Framework</h1>
+			<h1><?php echo $jobject["message"]?></h1>
 			<p>Version:</p>
 			<br>
 
