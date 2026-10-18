@@ -21,7 +21,22 @@ class WelcomeController extends MainController
 
     return $this->view('welcome/index',$jstring);
 
-  }   
+  }
+
+  public function add() 
+  {    
+
+    return $this->view('welcome/add');
+
+  }
+
+  public function store($request) 
+  {   
+
+    var_dump($request);
+    
+
+  }       
 
 }
 

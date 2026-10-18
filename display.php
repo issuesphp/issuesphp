@@ -2,10 +2,10 @@
 
 require 'routes/web.php';
 
-$routeNameController  = $_GET['controller'] ?? '';
-$routeNameMethod  = $_GET['method'] ?? '';
+$segment  = $_GET['controller'] ?? '';
+$param1  = $_GET['method'] ?? '';
 
 
-routeFactory($routeNameController,$routeNameMethod);
+routeFactory($segment,$param1);
 
 
