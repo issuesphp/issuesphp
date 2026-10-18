@@ -1,58 +1,6 @@
 <?php
 
-require __DIR__.'/../../../bootstrap/app.php';
-
-
-use Issues\Display\Routes\Route;
-
-
-// require 'routes/web.php';
-
-// Route::init();
-
-function getRoute()
-{
-	// require __DIR__.'/../../../bootstrap/app.php';
-	// use Issues\Display\Routes\Route;
-	Route::init();
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-		// require 'routes/web.php';
-
-	$username = htmlspecialchars($_POST['username']);
-	$password = htmlspecialchars($_POST['password']);
-
-
-	if (!empty($username) && !empty($password)) {
-			// echo "UserName and Password is empty";
-
-			// $username = htmlspecialchars($_POST['username']);
-			// $password = htmlspecialchars($_POST['password']);
-
-		$routeNameMethod = array(
-			"username" => $username, 
-			"password" => $password          
-		);
-
-			// routeFactory('save',$routeNameMethod);
-
-			// Route::post('welcome', 'store', 'store',$routeNameMethod);
-
-			// echo "aqui";
-
-			// Route::init();
-
-		getRoute();
-	}
-
-
-}
-
-
-
-
+require 'routes/web.php';
 
 ?>
 <!DOCTYPE html>
@@ -88,16 +36,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 			<h1>ADD</h1>
 
-			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" accept-charset="utf-8">
+			<form action="save" method="POST" accept-charset="utf-8">
 				<div class="row">
 
 					
 					<div class="form-group col-xs-3 col-sm-3 col-md-12 col-lg-12">
 						<label>Username:</label>
-						<input type="text" name="username">
+						<input type="text" name="username" value="jonathan">
 						
 						<label>Password:</label>
-						<input type="text" name="password">
+						<input type="text" name="password" value="123">
 						
 					</div>
 				</div>
@@ -108,8 +56,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div class="row">
 
 					<div class="form-group col-xs-3 col-sm-3 col-md-12 col-lg-12">
-						<button type="submit" class="buno btn-success btn-md glyphicon glyphicon-ok " name="enviar" >Enviar</button>
-						<button type="reset" class="bdos btn-danger btn-md glyphicon glyphicon-remove" name="cancelar" >Cancelar</button>
+						<button type="submit" class="buno btn-success btn-md glyphicon glyphicon-ok " name="enviar" >Send</button>
+						<button type="reset" class="bdos btn-danger btn-md glyphicon glyphicon-remove" name="cancelar" >Cancel</button>
 					</div>
 				</div>
 
@@ -123,38 +71,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 	</html>
-
-	<?php
-
-	// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-	// 	// require 'routes/web.php';
-
-	// 	$username = htmlspecialchars($_POST['username']);
-	// 	$password = htmlspecialchars($_POST['password']);
-
-
-	// 	if (!empty($username) && !empty($password)) {
-	// 		// echo "UserName and Password is empty";
-
-	// 		// $username = htmlspecialchars($_POST['username']);
-	// 		// $password = htmlspecialchars($_POST['password']);
-
-	// 		$routeNameMethod = array(
-	// 			"username" => $username, 
-	// 			"password" => $password          
-	// 		);
-
-	// 		// routeFactory('save',$routeNameMethod);
-
-	// 		// Route::post('welcome', 'store', 'store',$routeNameMethod);
-
-	// 		// Route::init();
-	// 	}
-
-
-	// }
-
-
-
-	?>
+	
