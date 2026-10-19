@@ -23,20 +23,36 @@ class WelcomeController extends MainController
 
   }
 
-  public function add() 
-  {    
-
-    return $this->view('welcome/add');
-
-  }
-
-  public function store($request) 
+  public function show($id) 
   {   
 
-    var_dump($request);
-    
+   var_dump($id);
+   
 
-  }       
+ }   
+
+ public function add() 
+ {    
+
+  return $this->view('welcome/add');
+
+}
+
+public function store($request) 
+{   
+
+  var_dump($request);
+
+
+}
+
+public function delete($id) 
+{   
+
+ return $this->redirectGo('welcome','add');
+
+
+}        
 
 }
 
