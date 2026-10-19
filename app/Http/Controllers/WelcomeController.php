@@ -41,7 +41,18 @@ class WelcomeController extends MainController
 public function store($request) 
 {   
 
-  var_dump($request);
+ $dataRow = array(
+  "name"      
+);
+
+ $dataValue = array(
+  "j"      
+);
+
+ $welcome = new Welcome();
+
+
+ print_r($welcome->insert($dataRow,$dataValue));
 
 
 }

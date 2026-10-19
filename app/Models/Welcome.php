@@ -29,7 +29,7 @@ class Welcome extends MainModel
 
 	public function getWelcomesById($id)
 	{ 
-	
+
 
 		$query = IpModel::chosenOrLost($this->table,$id);
 
@@ -43,6 +43,14 @@ class Welcome extends MainModel
 		$query = IpModel::slipk('welcomes',$id);
 
 		return $query;		
+
+	}
+
+	public function insert($rowData,$rowValue)
+	{ 		
+
+		$query = IpModel::introduce('welcomes',$rowData,$rowValue);
+		return $query;	
 
 	}						
 }
