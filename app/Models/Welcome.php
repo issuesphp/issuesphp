@@ -46,10 +46,10 @@ class Welcome extends MainModel
 
 	}
 
-	public function insert($rowData,$rowValue)
+	public function insert($rowData)
 	{ 		
 
-		$query = IpModel::introduce('welcomes',$rowData,$rowValue);
+		$query = IpModel::introduce('welcomes',$rowData);
 		return $query;	
 
 	}						

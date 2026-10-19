@@ -41,18 +41,14 @@ class WelcomeController extends MainController
 public function store($request) 
 {   
 
- $dataRow = array(
-  "name"      
-);
+  $data = array(
+    "name" => 'a'      
+  );
 
- $dataValue = array(
-  "j"      
-);
-
- $welcome = new Welcome();
+  $welcome = new Welcome();
 
 
- print_r($welcome->insert($dataRow,$dataValue));
+  print_r($welcome->insert($data));
 
 
 }
