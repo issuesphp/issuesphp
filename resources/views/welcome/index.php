@@ -6,7 +6,10 @@ if (isset($argv[1])) {
 
 $params = $_GET['params'] ?? '';
 
-$jobject = json_decode($params, true);
+$jsonValid = preg_replace('/([a-zA-Z0-9_]+)\s*:\s*([^}]+)/', '"$1": "$2"', $params);
+
+$jobject = json_decode($jsonValid, true);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
