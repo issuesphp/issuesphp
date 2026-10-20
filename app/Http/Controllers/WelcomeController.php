@@ -26,7 +26,7 @@ class WelcomeController extends MainController
   public function show($id) 
   {   
 
-   var_dump($id);
+   return $this->view('welcome/show',$id);
    
 
  }   

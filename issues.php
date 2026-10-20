@@ -1,8 +1,8 @@
 <?php
 
-include 'vendor/issuesphp/framework/src/Issues/Config/App/path.php';
+require __DIR__.'/bootstrap/app.php';
 
-// include PATH_MAIN;
+use Issues\Config\App\App;
 
 echo "Connect Database an press y / n:\n";
 echo "\n";
@@ -17,7 +17,7 @@ echo "issuesphp:serve | Start a local server\n";
 echo "issuesphp:make:controller:display | Create controller and display files\n";
 
 
-$result = shell_exec(PATH_COMMANDS);
+$result = shell_exec(App::PATH_COMMANDS);
 
 echo $result;
 ?>
