@@ -17,9 +17,7 @@ class WelcomeController extends MainController
       "message" => $message      
     );
 
-    $jstring = json_encode($data);
-
-    return $this->view('welcome/index',$jstring);
+    return $this->view('welcome/index',$data);
 
   }
 
