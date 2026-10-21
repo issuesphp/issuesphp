@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-function routeFactory($segment,$param1) {	
+function routeFactory($segment,$param1,$param2,$param3) {
 
-	Route::get('welcome', 'index', 'welcomes',$segment,$param1);
+	Route::get('welcome', 'index', 'welcomes',$segment);
 
 	Route::get('welcome', 'add', 'create',$segment,$param1);
 
