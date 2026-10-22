@@ -1,14 +1,10 @@
 <?php
 
-if (isset($argv[1])) {
-    parse_str($argv[1], $_GET);
-}
+require __DIR__.'/../../../bootstrap/app.php';
 
-$params = $_GET['params'] ?? '';
+use Issues\Display\Format\Format;
 
-$jsonValid = preg_replace('/([a-zA-Z0-9_]+)\s*:\s*([^}]+)/', '"$1": "$2"', $params);
-
-$jobject = json_decode($jsonValid, true);
+$data = Format::getObjectFormat($argv);
 
 ?>
 <!DOCTYPE html>
@@ -95,7 +91,7 @@ $jobject = json_decode($jsonValid, true);
 
 		<div class="wrap">
 
-			<h1><?php echo $jobject["message"]?></h1>
+			<h1><?php echo $data->message?></h1>
 			<p>Version:</p>
 			<br>
 

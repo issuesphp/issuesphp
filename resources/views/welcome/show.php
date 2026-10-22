@@ -1,12 +1,10 @@
 <?php
 
-if (isset($argv[1])) {
-    parse_str($argv[1], $_GET); // Simulamos $_GET
-}
+require __DIR__.'/../../../bootstrap/app.php';
 
-$params = $_GET['params'] ?? '';
+use Issues\Display\Format\Format;
 
-$jobject = json_decode($params, true);
+$data = Format::getOneObjectFormat($argv);
 
 ?>
 <!DOCTYPE html>
@@ -93,7 +91,7 @@ $jobject = json_decode($params, true);
 
 		<div class="wrap">
 
-			<h1><?php echo $jobject?></h1>
+			<h1><?php echo $data?></h1>
 
 			
 
