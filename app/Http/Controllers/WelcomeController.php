@@ -57,7 +57,14 @@ public function delete($id)
  return $this->redirectGo('welcome','add');
 
 
-}        
+} 
+
+public function all($welcomeModel) 
+{    
+
+  print_r($welcomeModel->getWelcomes());
+
+}       
 
 }
 

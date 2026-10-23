@@ -2,6 +2,10 @@
 
 require __DIR__.'/../../../bootstrap/app.php';
 
+use App\Config\AppBase;
+
+use Issues\Config\App\App;
+
 use Issues\Display\Format\Format;
 
 use Issues\Lang\Lang;
@@ -13,7 +17,7 @@ $data = Format::getObjectFormat($argv);
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo AppBase::APP_LOCALE ?>">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
@@ -96,14 +100,15 @@ $data = Format::getObjectFormat($argv);
 
 		<div class="wrap">
 
-			<h1><?php echo $data->message?></h1>
-			<p>Version:</p>
+			<h1>View: <?php echo $data->message?></h1>
+			<p>Version: <?php echo App::ISSUESPHP_VERSION ?></p>
+			<h2>Lang: <?php echo $data[0]?></h2>
 			<br>
 
 			<p>Getting started <a href="https://github.com/issuesphp/issuesphp" class="btn btn-light" target="_blank">Skeleton</a>
 				and <a href="https://github.com/issuesphp/framework" class="btn btn-light" target="_blank">Framework</a></p>
 				<br>
-				<p>Sponsor our project <a href="https://ko-fi.com/foroworkers" class="btn btn-light" target="_blank">Donate</a></p>
+				<p>Sponsor our project <a href="https://ko-fi.com/issuesphpframework" class="btn btn-light" target="_blank">Donate</a></p>
 
 			</div>
 
