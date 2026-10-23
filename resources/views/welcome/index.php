@@ -4,6 +4,11 @@ require __DIR__.'/../../../bootstrap/app.php';
 
 use Issues\Display\Format\Format;
 
+use Issues\Lang\Lang;
+
+
+$lang = Lang::getLang();
+
 $data = Format::getObjectFormat($argv);
 
 ?>

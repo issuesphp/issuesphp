@@ -5,5 +5,6 @@ namespace App\Config;
 class App 
 {
     public const APP_NAME = 'MyApp';
-    public const APP_STATE = 'development';   
+    public const APP_STATE = 'development';
+    public const APP_LOCALE = 'en';    
 }
