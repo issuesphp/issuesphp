@@ -102,7 +102,7 @@ $data = Format::getObjectFormat($argv);
 
 			<h1>View: <?php echo $data->message?></h1>
 			<p>Version: <?php echo App::ISSUESPHP_VERSION ?></p>
-			<h2>Lang: <?php echo $data[0]?></h2>
+			<h2>Lang: <?php echo $lang[0]?></h2>
 			<br>
 
 			<p>Getting started <a href="https://github.com/issuesphp/issuesphp" class="btn btn-light" target="_blank">Skeleton</a>
@@ -111,6 +111,15 @@ $data = Format::getObjectFormat($argv);
 				<p>Sponsor our project <a href="https://ko-fi.com/issuesphpframework" class="btn btn-light" target="_blank">Donate</a></p>
 
 			</div>
+
+			<footer class="text-center text-lg-start bg-body-tertiary text-white" style="background-color: black">
+
+				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+					© 2026 Copyright:
+					<a class="text-reset fw-bold" href="https://issuesphpframework.online/" target="_blank">IssuesPHP Framework PHP</a>
+				</div>
+
+			</footer>
 
 
 		</body>
