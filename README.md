@@ -4,7 +4,7 @@ The skeleton application for the IssuesPHP framework.
 
 ## Documentation
 
-The IssuesPHP Framework manual is available at [blog/docs](https://issuesphp.blogspot.com/p/issuesphp.html) and [video/tutorials](https://www.udemy.com/course/issuesphp-framework-from-scratch-step-by-step-with-php-8/?couponCode=GITHUB).
+The IssuesPHP Framework manual is available at [docs](https://issuesphpframework.online/user-guide).
 
 
 ## Setup
@@ -55,14 +55,6 @@ $ http://localhost/issuesphpdev/
 ```bash
 $ sudo a2enmod rewrite
 ```
-
-## Resources
-
-- Find us at:
-- YouTube: **[youtube.com/@issuesphp](https://youtube.com/@issuesphp)** — Videos every week
-- Stackoverflow: **[stackoverflow.com/users/33186023/issuesphp](https://stackoverflow.com/users/33186023/issuesphp)** — QA
-- Medium: **[medium.com/@issuesphp](https://medium.com/@issuesphp)** — Tutorials
-- Dev: **[dev.to/issuesphp](https://dev.to/issuesphp)** — Tutorials
 
 
 ## We appreciate
