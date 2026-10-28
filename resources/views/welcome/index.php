@@ -10,6 +10,10 @@ use Issues\Display\Format\Format;
 
 use Issues\Lang\Lang;
 
+use Issues\Helper\Uri;
+
+$welcomeUri = Uri::baseUrl('welcome');
+
 
 $lang = Lang::getLang();
 
@@ -102,6 +106,7 @@ $data = Format::getObjectFormat($argv);
 
 			<h1>View: <?php echo $data->message?></h1>
 			<p>Version: <?php echo App::ISSUESPHP_VERSION ?></p>
+			<p>Navigation: <?php echo $welcomeUri ?></p>
 			<h2>Lang: <?php echo $lang[0]?></h2>
 			<br>
 
