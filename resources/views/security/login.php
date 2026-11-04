@@ -1,6 +1,10 @@
 <?php
 
+require __DIR__.'/../../../bootstrap/app.php';
+
 require 'routes/web.php';
+
+use Issues\Helper\Uri;
 
 ?>
 <!DOCTYPE html>
@@ -32,6 +36,31 @@ require 'routes/web.php';
 <body>
 	<body>
 
+		<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+		<div class="navbar-header text-left">
+
+			<a class="navbar-brand" href="<?php echo Uri::baseUrl('')?>">IssuesPHP</a>
+
+		</div>
+
+
+
+		<li class="nav-item">
+			<a class="nav-link" href="<?php echo Uri::baseUrl('login')?>">
+				<span class="mr-2 d-lg-inline text-gray-600 small">Login</span>             
+			</a>
+
+		</li>                  
+
+
+
+
+	</ul>
+
+
+</nav>
+
 		<div class="wrap">
 
 			<h1>Login</h1>
@@ -42,10 +71,10 @@ require 'routes/web.php';
 					
 					<div class="form-group col-xs-3 col-sm-3 col-md-12 col-lg-12">
 						<label>Email:</label>
-						<input type="email" name="email" value="test@gmail.com">
+						<input type="email" name="email">
 						
 						<label>Password:</label>
-						<input type="text" name="password" value="123">
+						<input type="text" name="password">
 						
 					</div>
 				</div>

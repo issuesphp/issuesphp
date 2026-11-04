@@ -12,9 +12,6 @@ use Issues\Lang\Lang;
 
 use Issues\Helper\Uri;
 
-$welcomeUri = Uri::baseUrl('welcome');
-
-
 $lang = Lang::getLang();
 
 $data = Format::getObjectFormat($argv);
@@ -48,7 +45,7 @@ $data = Format::getObjectFormat($argv);
 		}
 		body {
 			height: 100%;
-			background: black;
+			background: #fafafa;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			color: #777;
 			font-weight: 300;
@@ -102,11 +99,36 @@ $data = Format::getObjectFormat($argv);
 <body>
 	<body>
 
+			<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+		<div class="navbar-header text-left">
+
+			<a class="navbar-brand" href="<?php echo Uri::baseUrl('')?>">IssuesPHP</a>
+
+		</div>
+
+
+
+		<li class="nav-item">
+			<a class="nav-link" href="<?php echo Uri::baseUrl('login')?>">
+				<span class="mr-2 d-lg-inline text-gray-600 small">Login</span>             
+			</a>
+
+		</li>                  
+
+
+
+
+	</ul>
+
+
+</nav>
+
+
 		<div class="wrap">
 
-			<h1>View: <?php echo $data->message?></h1>
-			<p>Version: <?php echo App::ISSUESPHP_VERSION ?></p>
-			<p>Navigation: <?php echo $welcomeUri ?></p>
+			<h1><?php echo $data->message?></h1>
+			<p>Version: <?php echo App::ISSUESPHP_VERSION ?></p>		
 			<h2>Lang: <?php echo $lang[0]?></h2>
 			<br>
 
