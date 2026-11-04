@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-// use App\Models\Welcome;
+use App\Models\Security;
 
 
 class SecurityController extends MainController
@@ -19,20 +19,14 @@ class SecurityController extends MainController
 	public function signin($request) 
 	{   
 
-		// $data = array(
-		// 	"name" => 'a'      
-		// );
+		
 
-		 // print_r("aa");
+		$security = new Security();
 
-		// var_dump($request->password);
+		$user = $security->checkUser($request->email,$request->password);
 
-		var_dump($request);
-
-		// $welcome = new Welcome();
-
-
-		// print_r($welcome->insert($data));
+		print_r($user);
+	
 
 
 	}
