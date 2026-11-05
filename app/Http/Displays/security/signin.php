@@ -6,9 +6,9 @@ require __DIR__.'/../../../../bootstrap/app.php';
 
 use App\Http\Controllers\SecurityController;
 
-use Issues\Display\Format\Format;
+use Issues\Display\Format\FormatDisplay;
 
-$jobjectArray = Format::getArrayObjectFormat($argv);
+$jobjectArray = FormatDisplay::getArrayObjectFormat($argv);
 
 $welcome = new SecurityController();
 

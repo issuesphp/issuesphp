@@ -6,7 +6,7 @@ use App\Config\AppBase;
 
 use Issues\Config\App\App;
 
-use Issues\Display\Format\Format;
+use Issues\Display\Format\FormatView;
 
 use Issues\Lang\Lang;
 
@@ -14,7 +14,7 @@ use Issues\Helper\Uri;
 
 $lang = Lang::getLang();
 
-$data = Format::getObjectFormat($argv);
+$data = FormatView::getArrayObjectFormat($argv);
 
 ?>
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ $data = Format::getObjectFormat($argv);
 		}
 		body {
 			height: 100%;
-			background: #fafafa;
+			background: black;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			color: #777;
 			font-weight: 300;
