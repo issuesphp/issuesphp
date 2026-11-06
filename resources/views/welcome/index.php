@@ -6,11 +6,12 @@ use App\Config\AppBase;
 
 use Issues\Config\App\App;
 
+use Issues\Display\Fragment\Fragment;
+
 use Issues\Display\Format\FormatView;
 
-use Issues\Lang\Lang;
 
-use Issues\Helper\Uri;
+use Issues\Lang\Lang;
 
 $lang = Lang::getLang();
 
@@ -20,17 +21,14 @@ $data = FormatView::getArrayObjectFormat($argv);
 <!DOCTYPE html>
 <html lang="<?php echo AppBase::APP_LOCALE ?>">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
 
-	<meta property="og:image" content="public/assets/img/issuesphp.png" /> 
-
-	<meta name="author" content="Jonathan Castro">
-	<meta name="copyright" content="IssuesPHP Framework" /> 
+	<?php echo Fragment::include('header')?>
+	
 
 	<title>IssuesPHP Framework</title>
 
-	<link rel="icon" type="image/x-icon" href="public/assets/img/issuesphp.png" />
+	<?php echo Fragment::metaDescription('Issuesphp is a simple, lightweight framework for developers who create efficient software.')?>
+
 
 	<style>
 		div.logo {
@@ -99,30 +97,9 @@ $data = FormatView::getArrayObjectFormat($argv);
 <body>
 	<body>
 
-			<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-		<div class="navbar-header text-left">
-
-			<a class="navbar-brand" href="<?php echo Uri::baseUrl('')?>">IssuesPHP</a>
-
-		</div>
+		<?php echo Fragment::include('navbar')?>
 
 
-
-		<li class="nav-item">
-			<a class="nav-link" href="<?php echo Uri::baseUrl('login')?>">
-				<span class="mr-2 d-lg-inline text-gray-600 small">Login</span>             
-			</a>
-
-		</li>                  
-
-
-
-
-	</ul>
-
-
-</nav>
 
 
 		<div class="wrap">
@@ -139,14 +116,10 @@ $data = FormatView::getArrayObjectFormat($argv);
 
 			</div>
 
-			<footer class="text-center text-lg-start bg-body-tertiary text-white" style="background-color: black">
 
-				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-					© 2026 Copyright:
-					<a class="text-reset fw-bold" href="https://issuesphpframework.online/" target="_blank">IssuesPHP Framework PHP</a>
-				</div>
+			<?php echo Fragment::include('footer')?>
 
-			</footer>
+			
 
 
 		</body>
