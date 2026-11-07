@@ -22,7 +22,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 <html lang="<?php echo AppBase::APP_LOCALE ?>">
 <head>
 
-	<?php echo Fragment::include('header')?>
+	<?php echo Fragment::include('inc/header')?>
 	
 
 	<title>IssuesPHP Framework</title>
@@ -97,7 +97,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 <body>
 	<body>
 
-		<?php echo Fragment::include('navbar')?>
+		<?php echo Fragment::include('inc/navbar')?>
 
 
 
@@ -117,7 +117,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 			</div>
 
 
-			<?php echo Fragment::include('footer')?>
+			<?php echo Fragment::include('inc/footer')?>
 
 			
 
