@@ -15,19 +15,19 @@ use Issues\Lang\Lang;
 
 $lang = Lang::getLang();
 
-$data = FormatView::getArrayObjectFormat($argv);
+$data = FormatView::getObjectFormat($argv);
 
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo AppBase::APP_LOCALE ?>">
 <head>
 
-	<?php echo Fragment::include('inc/header')?>
+	<?php Fragment::include('inc/header')?>
 	
 
 	<title>IssuesPHP Framework</title>
 
-	<?php echo Fragment::metaDescription('Issuesphp is a simple, lightweight framework for developers who create efficient software.')?>
+	<?php Fragment::metaDescription('Issuesphp is a simple, lightweight framework for developers who create efficient software.')?>
 
 
 	<style>
@@ -43,7 +43,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 		}
 		body {
 			height: 100%;
-			background: black;
+			background: #fafafa;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			color: #777;
 			font-weight: 300;
@@ -97,7 +97,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 <body>
 	<body>
 
-		<?php echo Fragment::include('inc/navbar')?>
+		<?php Fragment::include('inc/navbar')?>
 
 
 
@@ -117,7 +117,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 			</div>
 
 
-			<?php echo Fragment::include('inc/footer')?>
+			<?php Fragment::include('inc/footer')?>
 
 			
 
