@@ -4,23 +4,27 @@ require __DIR__.'/../bootstrap/app.php';
 
 use Issues\Display\Routes\Route;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (!empty($_SERVER["REQUEST_METHOD"])) {
 	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		
 
-	$email = htmlspecialchars($_POST['email']);
-	$pass = htmlspecialchars($_POST['password']);
-
-
-	$requestLogin = array(
-		"email" => $email, 
-		"password" => $pass          
-	);
+		$email = htmlspecialchars($_POST['email']);
+		$pass = htmlspecialchars($_POST['password']);
 
 
+		$requestLogin = array(
+			"email" => $email, 
+			"password" => $pass          
+		);
 
-	Route::post('security', 'signin','signin', 'signin',$requestLogin);				
-	
 
+
+		Route::post('security', 'signin','signin', 'signin',$requestLogin);				
+		
+
+
+	}
 
 }
 
