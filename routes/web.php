@@ -35,6 +35,8 @@ function routeFactory($segment,$param1,$param2,$param3) {
 
 	Route::get('security', 'login', 'login',$segment);
 
+	Route::get('user', 'dashboard', 'dashboard',$segment);
+
 }
 
 

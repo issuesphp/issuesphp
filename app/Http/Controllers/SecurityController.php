@@ -19,27 +19,11 @@ class SecurityController extends MainController
 	}
 
 	public function signin($request) 
-	{   
-
-		// $data = array(
-		// 	"name" => 'a'      
-		// );
-
-		 // print_r("aa");
-
-		// var_dump($request->password);
-
-		// var_dump($request);
-
-		// var_dump($request->email);
+	{		
 
 		$security = new Security();
 
-		$user = $security->checkUser($request->email,$request->password);
-
-		// print_r($user);
-
-		// print_r($user['id']);
+		$user = $security->checkUser($request->email,$request->password);		
 
 		if ($user) {
 
@@ -49,25 +33,39 @@ class SecurityController extends MainController
 				'role_id' => $user['role_id']											
 			);
 
-			$u = Session::setUserSession($data);
+			Session::setUserSession($data);
 
-			// print_r($u);
+			$userInfo = Session::getUserSession();			
 
-			// $message = 'Welcome to IssuesPHP Framework';
-
-			$data = array(
-				"test" => $u      
-			);
-
-			return $this->view('welcome/show',$data);
+			$this->nivUsers($userInfo);			
 
 
+		}else{ 
+
+			$this->login();
+
+		}		
+
+
+	}
+
+	public function nivUsers($userInfo)
+	{
+
+
+		switch ($userInfo['role_id']) {
+			case 1:	
+
+			return $this->view('user/dashboard');
+
+			break;		
+			case 2:		
+
+			break;
+			default:
+
+			echo "Role not Found";					
 		}
-
-		// print_r($user);
-
-
-		// print_r($welcome->insert($data));
 
 
 	}
