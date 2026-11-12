@@ -19,5 +19,13 @@ class Security extends MainModel
 
 	}
 
-					
+	public function getAuthTable()
+	{ 		
+
+		$query = IpModel::createAuthTable($this->table);
+		return $query;	
+
+	}
+
+	
 }
