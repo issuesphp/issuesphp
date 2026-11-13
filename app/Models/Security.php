@@ -27,5 +27,13 @@ class Security extends MainModel
 
 	}
 
+	public function insert($rowData)
+	{ 
+		
+		$query = IpModel::introduceUser('users',$rowData);
+		return $query;	
+
+	}	
+
 	
 }
