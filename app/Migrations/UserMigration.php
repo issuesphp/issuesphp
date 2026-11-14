@@ -15,18 +15,26 @@ class UserMigration
 		$user = new Security();
 
 		$user->getAuthTable();
-
-		$data = array(
-			"email" => 'contact@issuesphpframework.online',
+		
+		$dataAdmin = array(
+			"email" => 'admin@issuesphpframework.online',
 			"username" => 'issuesphp',
-			"password" => '123',
+			"password" => 'Demo123',
+			"role_id" => '1'          
+		);
+
+		$infoA = $user->insert($dataAdmin);
+
+		$dataUser = array(
+			"email" => 'user@issuesphpframework.online',
+			"username" => 'issuesphp',
+			"password" => 'Demo123',
 			"role_id" => '2'          
 		);
 
-		$info = $user->insert($data);
+		$infoU = $user->insert($dataUser);
 
-		print_r($info);
-
+		print_r($infoA);
 		
 
 	}
