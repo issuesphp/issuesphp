@@ -20,7 +20,23 @@ if (!empty($_SERVER["REQUEST_METHOD"])) {
 
 
 
-		Route::post('security', 'signin','signin', 'signin',$requestLogin);				
+		Route::post('security', 'signin','signin', 'signin',$requestLogin);
+
+		$emailRe = htmlspecialchars($_POST['email']);
+		$usernameRe = htmlspecialchars($_POST['username']);
+		$passRe = htmlspecialchars($_POST['password']);
+		$questionRe = htmlspecialchars($_POST['question']);
+
+
+		$requestRegister = array(
+			"email" => $emailRe,
+			"username" => $usernameRe,  
+			"password" => $passRe,
+			"question" => $questionRe          
+		);
+
+
+		Route::post('security', 'store','save', 'save',$requestRegister);					
 		
 
 
@@ -34,6 +50,8 @@ function routeFactory($segment,$param1,$param2,$param3) {
 	Route::get('welcome', 'index', 'welcomes',$segment);	
 
 	Route::get('security', 'login', 'login',$segment);
+
+	Route::get('security', 'register', 'register',$segment);
 
 	Route::get('user', 'dashboard', 'dashboard',$segment);
 
