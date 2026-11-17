@@ -2,31 +2,22 @@
 
 require __DIR__.'/../../../bootstrap/app.php';
 
-
 use Issues\Session\Session;
-
-
-Session::init();
-
-Session::set('usuario', 'JuanPerez');
-Session::set('rol', 'Administrador');
-
-
-$usuarioActual = Session::get('email');
-$rolActual = Session::get('role_id');
-
-echo "Bienvenido, " . $usuarioActual . " con rol " . $rolActual;
-
 
 use Issues\Display\Format\FormatView;
 
 use Issues\Helper\Uri;
 
-
-
 $data = FormatView::getArrayObjectFormat($argv);
 
+Session::init();
 
+Session::set('email', 'contact@isssuesphpframework.online');
+Session::set('rol_id', '2');
+
+
+$userEmail = Session::get('email');
+$userRol = Session::get('role_id');
 
 ?>
 <!DOCTYPE html>
@@ -141,7 +132,7 @@ $data = FormatView::getArrayObjectFormat($argv);
 
 		<h1>Users Dashboard</h1>
 
-		<!-- <h2><h1><?php //echo $data->role?></h1></h2> -->
+		<h2>Welcome User:<?php echo $userEmail?></h2>
 
 		
 	</body>
