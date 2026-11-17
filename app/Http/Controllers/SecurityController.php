@@ -8,6 +8,8 @@ use App\Models\User;
 
 use Issues\Session\Session;
 
+use Issues\Helper\Hash;
+
 
 class SecurityController extends MainController
 {
@@ -34,14 +36,13 @@ class SecurityController extends MainController
 				'email' => $user['email'],
 				'role_id' => $user['role_id']											
 			);
-
 			
 			Session::set('email', $data['email']);
 			Session::set('role_id', $data['role_id']);
 
 			$userEmail = Session::get('email');
 			$userRol = Session::get('role_id');
-
+			
 
 			$this->nivUsers($data['role_id']);				
 
@@ -71,68 +72,72 @@ class SecurityController extends MainController
 			default:
 
 			echo "Role not Found";					
-		}	
-
-		public function register() 
-		{ 
-
-			$numberone = rand(1,100);
-			$numbertwo = rand(1,100);
-
-			$totalsum = $numberone + $numbertwo;	
-
-			$this->setSession('question',$totalsum);
-
-
-			$data=array(					
-				'question1' => $numberone,
-				'question2' => $numbertwo  
-			);		
-
-			return $this->view('security/register',$data);
-
 		}
-
-		public function store($request) 
-		{
-
-			$security = new Security();
-
-			$this->setSession();
-
-			$total = Session::get('question');
-
-			if ($total == $request->question) {
-
-
-
-				$data=array(					
-					'email' => $request->email,
-					'username' => $request->username,
-					'password' => $request->password,
-					'role_id' => '2'											
-				);
-
-
-				$info = $security->insert($data);			
-
-				return $this->redirectGo('security','login');	
-
-
-
-
-			}else{ 
-
-				$this->register();
-
-			}		
-
-
-		}
-
 
 
 	}
+
+	public function register() 
+	{ 
+		
+		$numberone = Hash::randomNumber(1,100);
+		$numbertwo = Hash::randomNumber(1,100);
+
+		$total = $numberone + $numbertwo;		
+
+		$data=array(					
+			'question1' => $numberone,
+			'question2' => $numbertwo,
+			'total' => $total    
+		);		
+
+		return $this->view('security/register',$data);
+
+	}
+
+	public function store($request) 
+	{
+		
+		$security = new Security();
+
+		$user = new User();
+
+
+		if ($request->question == $request->total) {
+
+
+			$data=array(					
+				'email' => $request->email,
+				'username' => $request->username,
+				'password' => $request->password,
+				'role_id' => '2'											
+			);
+
+			$info = $user->insert($data);			
+
+			return $this->redirectGo('security','login');	
+
+
+
+
+		}else{ 
+
+			$this->register();
+
+		}		
+
+
+	}
+
+	public function logout() {
+
+		Session::destroy();
+
+	}
+
+
+
+}
 
 
 
