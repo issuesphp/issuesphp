@@ -15,6 +15,13 @@ use Issues\Helper\Uri;
 
 	</div>
 
+	<li class="nav-item">
+		<a class="nav-link" href="<?php echo Uri::baseUrl('register')?>">
+			<span class="mr-2 d-lg-inline text-gray-600 small">Register</span>             
+		</a>
+
+	</li>
+
 
 
 	<li class="nav-item">
