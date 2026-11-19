@@ -4,7 +4,7 @@ require __DIR__.'/../../../bootstrap/app.php';
 
 require 'routes/web.php';
 
-use Issues\Helper\Uri;
+use Issues\Display\Fragment\Fragment;
 
 ?>
 <!DOCTYPE html>
@@ -22,6 +22,8 @@ use Issues\Helper\Uri;
 
 	<link rel="icon" type="image/x-icon" href="public/assets/img/issuesphp.png" />
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<style>		
 		body {
 			height: 100%;
@@ -36,62 +38,41 @@ use Issues\Helper\Uri;
 <body>
 	<body>
 
-		<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-		<div class="navbar-header text-left">
-
-			<a class="navbar-brand" href="<?php echo Uri::baseUrl('')?>">IssuesPHP</a>
-
-		</div>
-
-
-
-		<li class="nav-item">
-			<a class="nav-link" href="<?php echo Uri::baseUrl('login')?>">
-				<span class="mr-2 d-lg-inline text-gray-600 small">Login</span>             
-			</a>
-
-		</li>                  
-
-
-
-
-	</ul>
-
-
-</nav>
+		<?php Fragment::include('inc/navbar')?>
 
 		<div class="wrap">
 
-			<h1>Login</h1>
+			<div class="col-lg-8 mb-4 offset-md-2">
 
-			<form action="signin" method="POST" accept-charset="utf-8">
-				<div class="row">
+				<h1>Login</h1>
 
-					
+				<hr>
+
+				<form action="signin" method="POST" accept-charset="utf-8">
+
+
+
 					<div class="form-group col-xs-3 col-sm-3 col-md-12 col-lg-12">
 						<label>Email:</label>
-						<input type="email" name="email">
-						
+						<input type="email" name="email" class="form-control" value="test@gmail.com">
+
 						<label>Password:</label>
-						<input type="text" name="password">
-						
+						<input type="text" name="password" class="form-control" value="Test1234">
+
 					</div>
-				</div>
 
-				
 
-				
-				<div class="row">
 
 					<div class="form-group col-xs-3 col-sm-3 col-md-12 col-lg-12">
-						<button type="submit" class="buno btn-success btn-md glyphicon glyphicon-ok " name="enviar" >Send</button>
-						<button type="reset" class="bdos btn-danger btn-md glyphicon glyphicon-remove" name="cancelar" >Cancel</button>
+						<button type="submit" class="btn btn-primary" name="send" >Send</button>
+						
 					</div>
-				</div>
 
-			</form>
-			
+
+				</form>
+
+
+			</div>
 
 		</div>
 
@@ -100,4 +81,4 @@ use Issues\Helper\Uri;
 
 
 	</html>
-	
+

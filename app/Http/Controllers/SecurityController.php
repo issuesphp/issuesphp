@@ -133,6 +133,8 @@ class SecurityController extends MainController
 
 		Session::destroy();
 
+		return $this->redirectGo('security','login');	
+
 	}
 
 
