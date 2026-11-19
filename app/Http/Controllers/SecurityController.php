@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Security;
 
-use App\Models\User;
-
 use Issues\Session\Session;
 
 use Issues\Helper\Hash;
@@ -98,9 +96,7 @@ class SecurityController extends MainController
 	public function store($request) 
 	{
 		
-		$security = new Security();
-
-		$user = new User();
+		$security = new Security();		
 
 
 		if ($request->question == $request->total) {
@@ -113,7 +109,7 @@ class SecurityController extends MainController
 				'role_id' => '2'											
 			);
 
-			$info = $user->insert($data);			
+			$info = $security->insert($data);			
 
 			return $this->redirectGo('security','login');	
 
