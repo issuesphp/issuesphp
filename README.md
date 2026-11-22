@@ -1,10 +1,11 @@
+<p align="center"><a href="https://issuesphpframework.online/" target="_blank"><img src="https://issuesphpframework.online/public/images/issuesphp_framework_php.png" width="400"></a></p>
 # IssuesPHP 🚀
 
 **A lightweight, fast, and expressive PHP framework designed to build both full-featured web applications and microservices without endless configuration.**
 
-[![PHP Version](https://shields.io)](https://php.net)
-[![Packagist](https://shields.io)](https://packagist.org)
-[![License](https://shields.io)](LICENSE)
+<a href="https://packagist.org/packages/issuesphp/issuesphp"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/issuesphp/issuesphp"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/issuesphp/issuesphp"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 
 ---
 
@@ -26,10 +27,10 @@ Create a new project directly via Composer:
 ```bash
 composer create-project issuesphp/issuesphp nameapp
 cd nameapp
-php -S localhost:8000 -t public
+php issues.php
 ```
 
-Open `http://localhost:8000` in your browser or start testing your endpoints right away.
+Open `http://localhost/nameapp` in your browser or start testing your endpoints right away.
 
 ---
 
