@@ -1,92 +1,116 @@
-## Introduction
+# IssuesPHP 🚀
 
-The skeleton application for the IssuesPHP framework.
+**A lightweight, fast, and expressive PHP framework designed to build both full-featured web applications and microservices without endless configuration.**
 
-## Documentation
+[![PHP Version](https://shields.io)](https://php.net)
+[![Packagist](https://shields.io)](https://packagist.org)
+[![License](https://shields.io)](LICENSE)
 
-The IssuesPHP Framework manual is available at [docs](https://issuesphpframework.online/user-guide).
+---
 
+## ✨ Why IssuesPHP?
 
-## Setup
+**IssuesPHP** removes the overhead of heavy monolithic frameworks without sacrificing structure or scalability. Its architecture lets you go from a full MVC web interface to an independent microservice using the exact same clean syntax:
 
-- PHP 
-- PostgreSQL, Mysqli (Or MySQL)
-- [Composer](https://getcomposer.org/)
+* 🌐 **Web Applications & Microservices:** Render full views or deploy lightweight, decoupled services with immediate response times.
+* ⚡ **Ultra-Direct Routing:** Connect controllers, actions, route aliases, and dynamic parameters in a single readable line.
+* 🚀 **High Performance & Low Footprint:** Minimalist core built for fast boot times and low memory usage in containers or traditional servers.
+* 🧩 **Minimal Learning Curve:** Predictable structure that any PHP developer can master in minutes.
 
+---
 
+## 📦 Installation
 
-## Installation
-
-- Composer
-
-```bash
-$ composer create-project issuesphp/issuesphp nameapp
-```
--  Clone Project
-
-```bash
-$ git clone https://github.com/issuesphp/issuesphp.git
-``` 
+Create a new project directly via Composer:
 
 ```bash
-$ composer install
+composer create-project issuesphp/issuesphp nameapp
+cd nameapp
+php -S localhost:8000 -t public
 ```
 
-```bash
-$ php issues.php
+Open `http://localhost:8000` in your browser or start testing your endpoints right away.
+
+---
+
+## 🚀 Simple & Expressive Routing
+
+In **IssuesPHP**, all your routes are centralized inside `routeFactory()`, directly mapping the **controller**, **method**, **route alias**, and **parameters**:
+
+```php
+<?php
+
+function routeFactory($segment, $param1, $param2, $param3) {
+
+    // Main module
+    Route::get('welcome', 'index', 'welcomes', $segment);
+    Route::get('welcome', 'add', 'create', $segment, $param1);
+    Route::get('welcome', 'show', 'show', $segment, $param1);
+    Route::get('welcome', 'delete', 'delete', $segment, $param1);
+
+    // Authentication & security
+    Route::get('security', 'login', 'login', $segment);
+    Route::get('security', 'logout', 'logout', $segment);
+    Route::get('security', 'register', 'register', $segment);
+
+    // User management / service endpoints
+    Route::get('user', 'index', 'users', $segment);
+    Route::get('user', 'dashboard', 'dashboard', $segment);
+    Route::get('user', 'show', 'ushow', $segment, $param1);
+
+}
 ```
 
-```bash
-$ issuesphp:serve | Start a local server
+### Anatomy of a Route in IssuesPHP
+
+```php
+Route::get('controller', 'method', 'url_alias', $segment, $param1);
 ```
 
-```bash
-$ http://localhost:8080
+| Parameter | Description | Example |
+| :--- | :--- | :--- |
+| **`controller`** | Name of the controller handling the request | `'user'` |
+| **`method`** | Action or method inside the controller | `'show'` |
+| **`url_alias`** | Public route or endpoint name | `'ushow'` |
+| **`$segment`** | Primary segment of the current URI | `$segment` |
+| **`$param1..3`** | Dynamic parameters captured from the URL | `$param1` |
+
+---
+
+## 🎯 Ideal Use Cases
+
+* **MVC Web Applications:** Admin panels, portals, dashboards, and full CRUD apps with a clean separation between business logic and views.
+* **Microservices & APIs:** Specialized services (authentication, user management, notifications, gateways) that demand fast startup and zero heavy dependencies.
+
+---
+
+## 📁 Project Structure
+
+```text
+nameapp/
+├── app/
+│   ├── Controllers/    # Controllers (Welcome, Security, User...)
+│   └── Models/         # Business logic and data layer
+├── core/               # Framework engine and Route class
+├── public/             # Entry point (index.php) and static assets
+├── routes/             # routeFactory() definitions
+└── views/              # UI templates (optional in microservice mode)
 ```
 
--  Option 2
+---
 
-```bash
-$ http://localhost/issuesphpdev/
-```
+## 🤝 Contributing
 
--  Active mod_rewrite apache
+Want to improve **IssuesPHP** or report a bug?
 
-```bash
-$ sudo a2enmod rewrite
-```
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'Add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a **Pull Request**.
 
+---
 
-## We appreciate
+## 📄 License
 
-- We thank all the collaborators who have contributed to this project in any way:
-
-- Stackoverflow: **[es.stackoverflow.com/users/16228/sal](https://es.stackoverflow.com/users/16228/sal) (https://es.stackoverflow.com/questions/636365/shell-exec-no-se-ejecuta-con-parametros-get)** 
-
-- Stackoverflow: **[es.stackoverflow.com/users/315134/francisco-ia-lover](https://es.stackoverflow.com/users/315134/francisco-ia-lover) (https://es.stackoverflow.com/questions/636368/combinar-include-dir-para-enlazar-archivos)** 
-
-
-
-
-## Author ✒️
-
-* **Jonathan Castro** - *Software Engineer* - [joncastdev](https://github.com/joncastdev)
-
-
-## Support
-
-_joncastdev@gmail.com_
-
-* If you would like a business forum with many extra features, please contact us with your requirements and budget. Thank you.
-
-
-## Donations
-
-* [Paypal](https://www.paypal.com/paypalme/programadorjonathan) - Thank you very much for your contribution.
-
-* [Ko-Fi](https://ko-fi.com/foroworkers) - Thank you very much for your contribution.
-
-* [Patreon](https://www.patreon.com/c/foroworkers) - Thank you very much for your contribution.
-
-
-
+Distributed under the [MIT](LICENSE) License. See `LICENSE` for more information.
