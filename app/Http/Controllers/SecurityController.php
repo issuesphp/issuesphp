@@ -109,11 +109,7 @@ class SecurityController extends MainController
 				'role_id' => '2'											
 			);
 
-			$info = $security->insert($data);			
-
-			return $this->redirectGo('security','login');	
-
-
+			$info = $security->insert($data);
 
 
 		}else{ 
