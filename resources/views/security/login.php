@@ -57,7 +57,7 @@ use Issues\Display\Fragment\Fragment;
 						<input type="email" name="email" class="form-control" value="test@gmail.com">
 
 						<label>Password:</label>
-						<input type="text" name="password" class="form-control" value="Test1234">
+						<input type="password" name="password" class="form-control" value="Test1234">
 
 					</div>
 
